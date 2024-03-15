@@ -1,7 +1,22 @@
 <div id="sidebar">
   <div id="menu">
-    <a [routerLink]="['home']">Home</a>
-    <a [routerLink]="['dashboard']">Dashboard</a>
-    <a [routerLink]="['movie-list']">Movies</a>
+    <a [routerLink]="['home']">
+      <div id="item-menu">
+        <img src="../../../assets/images/home-icon.svg" />
+        Home
+      </div>
+    </a>
+    <a [routerLink]="['dashboard']">
+      <div id="item-menu">
+        <img src="../../../assets/images/dashboard-icon.svg" />
+        Dashboard
+      </div>
+    </a>
+    <a [routerLink]="['movie-list']">
+      <div id="item-menu">
+        <img src="../../../assets/images/movies-icon.svg" />
+        Movies
+      </div>
+    </a>
   </div>
 </div>
