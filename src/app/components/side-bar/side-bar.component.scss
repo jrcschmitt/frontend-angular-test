@@ -1,0 +1,16 @@
+#sidebar {
+  #menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+
+    a {
+      text-decoration: none;
+      color: #FFF;
+      padding: 15px 20px;
+      &:hover {
+        background-color: gray
+      }
+    }
+  }
+}
