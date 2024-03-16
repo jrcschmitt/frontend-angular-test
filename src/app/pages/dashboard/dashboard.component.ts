@@ -108,7 +108,7 @@ export class DashboardComponent implements OnInit {
     }
   ];
 
-  constructor(private mainService: MainService) {
+  constructor(public mainService: MainService) {
   }
 
   ngOnInit(): void {
