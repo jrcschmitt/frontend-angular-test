@@ -1,1 +1,13 @@
-<p>movie-list works!</p>
+<h3>Movies List</h3>
+
+<ag-grid-angular
+  [class]="'ag-theme-quartz'"
+  [columnDefs]="columnDefs"
+  [pagination]="true"
+  [paginationPageSize]="paginationPageSize"
+  [paginationPageSizeSelector]="[paginationPageSize]"
+  [cacheBlockSize]="paginationPageSize"
+  [rowModelType]="'serverSide'"
+  (gridReady)="onGridReady($event)"
+  style="margin-top: 20px; width: 100%; height: 80vh;"
+></ag-grid-angular>
