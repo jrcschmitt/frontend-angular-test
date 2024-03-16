@@ -4,9 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AgGridAngular } from 'ag-grid-angular';
 import {
   ColDef,
-  GridReadyEvent,
   IServerSideDatasource,
-  IServerSideGetRowsParams,
   ValueGetterParams
 } from 'ag-grid-community';
 import 'ag-grid-enterprise';
@@ -76,10 +74,10 @@ export class MovieListComponent {
     },
   ];
 
-  constructor(private mainService: MainService) {
+  constructor(public mainService: MainService) {
   }
 
-  onGridReady(params: GridReadyEvent<any>) {
+  onGridReady(params: any) {
     var datasource = this.getServerSideDatasource();
     params.api!.setGridOption('serverSideDatasource', datasource);
   }
@@ -90,7 +88,7 @@ export class MovieListComponent {
     };
   }
 
-  getRows(params: IServerSideGetRowsParams) {
+  getRows(params: any) {
     const currentPage = params.api.paginationGetCurrentPage();
     const pageSize = params.api.paginationGetPageSize();
 

@@ -102,9 +102,7 @@ describe('DashboardComponent', () => {
     spyOn(component, 'getYearsWithMultipleWinners');
     spyOn(component, 'getTopThreeStudiosWinners');
     spyOn(component, 'getMaxMinWinIntervalProducers');
-
     component.ngOnInit();
-
     expect(component.getYearsWithMultipleWinners).toHaveBeenCalled();
     expect(component.getTopThreeStudiosWinners).toHaveBeenCalled();
     expect(component.getMaxMinWinIntervalProducers).toHaveBeenCalled();
