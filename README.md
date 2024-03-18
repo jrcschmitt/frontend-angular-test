@@ -37,3 +37,10 @@ To run the Angular application locally, follow these steps:
     npm start
     
 2. Open your web browser and navigate to http://localhost:4200/. The Angular application should now be running and visible in your browser.
+
+## Running the Unit tests
+
+To run the unit tests execute the following command:
+
+  ```bash
+  npm test
